@@ -13,6 +13,11 @@
 		E715833726AB3A12007C043E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E715833626AB3A12007C043E /* Preview Assets.xcassets */; };
 		E7E89D7B26AC13E200F0FA92 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D7926AC13E200F0FA92 /* Model.xcdatamodeld */; };
 		E7E89D7E26AC233C00F0FA92 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D7D26AC233C00F0FA92 /* DiceView.swift */; };
+		E7E89D8126AE864900F0FA92 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D8026AE864900F0FA92 /* ResultsView.swift */; };
+		E7E89D8726AEC05200F0FA92 /* Dice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D8326AEC05200F0FA92 /* Dice+CoreDataClass.swift */; };
+		E7E89D8826AEC05200F0FA92 /* Dice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D8426AEC05200F0FA92 /* Dice+CoreDataProperties.swift */; };
+		E7E89D8926AEC05200F0FA92 /* Result+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D8526AEC05200F0FA92 /* Result+CoreDataClass.swift */; };
+		E7E89D8A26AEC05200F0FA92 /* Result+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D8626AEC05200F0FA92 /* Result+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E715833826AB3A12007C043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E89D7A26AC13E200F0FA92 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E7E89D7D26AC233C00F0FA92 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		E7E89D8026AE864900F0FA92 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E7E89D8326AEC05200F0FA92 /* Dice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E7E89D8426AEC05200F0FA92 /* Dice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E7E89D8526AEC05200F0FA92 /* Result+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E7E89D8626AEC05200F0FA92 /* Result+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 		E715832326AB3A10007C043E = {
 			isa = PBXGroup;
 			children = (
+				E7E89D8326AEC05200F0FA92 /* Dice+CoreDataClass.swift */,
+				E7E89D8426AEC05200F0FA92 /* Dice+CoreDataProperties.swift */,
+				E7E89D8526AEC05200F0FA92 /* Result+CoreDataClass.swift */,
+				E7E89D8626AEC05200F0FA92 /* Result+CoreDataProperties.swift */,
 				E715832E26AB3A10007C043E /* Dices */,
 				E715832D26AB3A10007C043E /* Products */,
 			);
@@ -58,6 +72,7 @@
 			children = (
 				E715832F26AB3A10007C043E /* DicesApp.swift */,
 				E715833126AB3A10007C043E /* ContentView.swift */,
+				E7E89D8026AE864900F0FA92 /* ResultsView.swift */,
 				E7E89D7D26AC233C00F0FA92 /* DiceView.swift */,
 				E7E89D7926AC13E200F0FA92 /* Model.xcdatamodeld */,
 				E715833326AB3A12007C043E /* Assets.xcassets */,
@@ -144,10 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E89D8926AEC05200F0FA92 /* Result+CoreDataClass.swift in Sources */,
 				E715833226AB3A10007C043E /* ContentView.swift in Sources */,
 				E7E89D7E26AC233C00F0FA92 /* DiceView.swift in Sources */,
+				E7E89D8726AEC05200F0FA92 /* Dice+CoreDataClass.swift in Sources */,
 				E715833026AB3A10007C043E /* DicesApp.swift in Sources */,
+				E7E89D8126AE864900F0FA92 /* ResultsView.swift in Sources */,
 				E7E89D7B26AC13E200F0FA92 /* Model.xcdatamodeld in Sources */,
+				E7E89D8826AEC05200F0FA92 /* Dice+CoreDataProperties.swift in Sources */,
+				E7E89D8A26AEC05200F0FA92 /* Result+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
