@@ -25,7 +25,8 @@ struct DicesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
+            ContentView()
+                .environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }

@@ -12,6 +12,7 @@
 		E715833426AB3A12007C043E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E715833326AB3A12007C043E /* Assets.xcassets */; };
 		E715833726AB3A12007C043E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E715833626AB3A12007C043E /* Preview Assets.xcassets */; };
 		E7E89D7B26AC13E200F0FA92 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D7926AC13E200F0FA92 /* Model.xcdatamodeld */; };
+		E7E89D7E26AC233C00F0FA92 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E89D7D26AC233C00F0FA92 /* DiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E715833626AB3A12007C043E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E715833826AB3A12007C043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E89D7A26AC13E200F0FA92 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E7E89D7D26AC233C00F0FA92 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E715832F26AB3A10007C043E /* DicesApp.swift */,
 				E715833126AB3A10007C043E /* ContentView.swift */,
+				E7E89D7D26AC233C00F0FA92 /* DiceView.swift */,
 				E7E89D7926AC13E200F0FA92 /* Model.xcdatamodeld */,
 				E715833326AB3A12007C043E /* Assets.xcassets */,
 				E715833826AB3A12007C043E /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E715833226AB3A10007C043E /* ContentView.swift in Sources */,
+				E7E89D7E26AC233C00F0FA92 /* DiceView.swift in Sources */,
 				E715833026AB3A10007C043E /* DicesApp.swift in Sources */,
 				E7E89D7B26AC13E200F0FA92 /* Model.xcdatamodeld in Sources */,
 			);
