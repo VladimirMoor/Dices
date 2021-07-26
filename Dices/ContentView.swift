@@ -38,7 +38,9 @@ struct ContentView: View {
                         }
                     }
                     .pickerStyle(MenuPickerStyle())
-                
+            
+            HStack {
+                Spacer()
                 Button {
                     withAnimation {
                         degrees += 360
@@ -54,7 +56,12 @@ struct ContentView: View {
                 .cornerRadius(10)
                 .shadow(color: .gray, radius: 5, x: 3, y: 4)
                 .padding()
-
+                
+                Text("Total: \(result.reduce(0, +))")
+                    .padding()
+                
+                Spacer()
+            }
             }
         
         

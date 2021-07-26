@@ -16,26 +16,30 @@ struct ResultsView: View {
         
         ScrollView {
             VStack {
-            ForEach(results) { result in
-                VStack {
-                    Text("Date: \(getDate(date: result.date))")
-                    Text("Total: " + getTotal(array: result.dicesArray))
-                    HStack {
-                    ForEach(result.dicesArray) { num in
-                        Text("\(num.number)")
-                            .padding(10)
-                            .background(Color.gray)
-                            .cornerRadius(3)
-                            
+                ForEach(results) { result in
+                    VStack(alignment: .leading) {
+                        Text("Date: \(getDate(date: result.date))")
+                        Text("Total: " + getTotal(array: result.dicesArray))
+                        
+                        HStack {
+                            ForEach(result.dicesArray) { num in
+                                Text("\(num.number)")
+                                    .padding(8)
+                                    .background(Color.gray)
+                                    .cornerRadius(5)
+                                
+                            }
+                            Spacer()
+                        }
                     }
-                    }
+                    .frame(maxWidth: .infinity)
+                    .background(Color.init(red: 0.2, green: 0.4, blue: 0.1, opacity: 0.2))
+                    .padding(10)
+                    .cornerRadius(4)
+                }
             }
-            .background(Color.yellow)
+            .frame(maxWidth: .infinity)
             
-            }
-        }
-            .frame(minWidth: .infinity, alignment: .leading)
-            .background(Color.red)
         }
         
     }
