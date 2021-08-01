@@ -22,8 +22,9 @@ extension Result {
     
     public var dicesArray: [Dice] {
         let set = dice as? Set<Dice> ?? []
-        return set.sorted {
-            $0.number < $1.number
+        return set.sorted {_,_ in
+            return true
+
         }
     }
 
