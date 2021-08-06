@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ResultsView: View {
     
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(entity: Result.entity(), sortDescriptors: []) var results: FetchedResults<Result>
+
     
     var body: some View {
         
@@ -22,13 +24,18 @@ struct ResultsView: View {
                         Text("Total: " + getTotal(array: result.dicesArray))
                         
                         HStack {
-                            ForEach(result.dicesArray) { num in
-                                Text("\(num.number)")
-                                    .padding(8)
-                                    .background(Color.gray)
-                                    .cornerRadius(5)
-                                
+                            
+                            if let arr = result.dice?.allObjects as? [Dice] {
+                                ForEach(arr) { num in
+                                    Text("\(num.number)")
+                                        .padding(8)
+                                        .background(Color.gray)
+                                        .cornerRadius(5)
+                                    
+                                }
                             }
+                            
+                            
                             Spacer()
                         }
                     }

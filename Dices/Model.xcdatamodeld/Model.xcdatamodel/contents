@@ -6,7 +6,7 @@
     <entity name="Result" representedClassName="Result" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <relationship name="dice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dice"/>
+        <relationship name="dice" toMany="YES" deletionRule="Nullify" destinationEntity="Dice"/>
     </entity>
     <entity name="Results" representedClassName="Results" syncable="YES" codeGenerationType="class">
         <relationship name="result" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Result"/>

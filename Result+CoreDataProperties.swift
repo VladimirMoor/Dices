@@ -24,7 +24,6 @@ extension Result {
         let set = dice as? Set<Dice> ?? []
         return set.sorted {_,_ in
             return true
-
         }
     }
 

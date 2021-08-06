@@ -114,7 +114,7 @@ struct ContentView: View {
         }
         
         try? context.save()
-        print("saved! Result ID = \(entityResult.id?.uuidString ?? "no data")")
+       //  print("saved! Result ID = \(entityResult.id?.uuidString ?? "no data")")
         
     }
 }
